@@ -76,9 +76,11 @@ $breakpoint-tablet: 768px;
 }
 
 .MobileHeaderToggler{
+  cursor: pointer;
   position: absolute;
   z-index: 100;
   width: auto;
+  white-space: nowrap;
   height: 40px;
   width: 85px;
   margin-left: -15px;
@@ -91,6 +93,10 @@ $breakpoint-tablet: 768px;
   padding-left: 13px;
   line-height: 40px;
   padding-right: 13px;
+  transition: background-color 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+  &:active,&:hover{
+    background-color: var(--primary);
+  }
 }
 .MobileHeaderMenu{
   position: absolute;
